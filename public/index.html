@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+    <style>
+      /* Ensure the video takes up the entire background */
+      #background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Ensures content is displayed above the video */
+      }
+
+      /* Style for the body or other elements, you can adjust as needed */
+   
+
+   
+    </style>
+  </head>
+  <body>
+    <video id="background-video" autoplay muted loop>
+      <source src="earth.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- <script>
+      // Function to generate a random color
+      const getRandomColor = () => {
+        const letters = '01ed23ab456789cf';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      };
+
+      const getRandomLinearGradient = () => {
+        const color1 = getRandomColor();
+        const color2 = getRandomColor();
+        // const angle = Math.floor(Math.random() * 360); // Random angle between 0 and 360 degrees
+        return `linear-gradient(180deg, ${color1} 50%, ${color2} 75%)`;
+      };
+
+      // Set random linear gradient as background
+      document.body.style.background = getRandomLinearGradient();
+    </script> -->
+
+    <div id="root"></div>
+  </body>
+</html>
